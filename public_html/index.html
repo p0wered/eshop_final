@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>E-SHOP</title>
+    <link rel="icon" href="/images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/splide.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/splide.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flex-box-ds" style="justify-content: space-between">
+                <a href="#" id="logo">E-SHOP</a>
+                <ul class="navigation-desktop d-none d-lg-flex" style="padding: 0">
+                    <li><a href="#" class="navigation-item-ds">ГЛАВНАЯ</a></li>
+                    <li><a href="catalog.html" class="navigation-item-ds">КАТАЛОГ</a></li>
+                    <li><a href="delivery.html" class="navigation-item-ds">ДОСТАВКА</a></li>
+                    <li><a target="_blank" href="https://vk.com/topic-39182488_33420679" class="navigation-item-ds">ОТЗЫВЫ</a></li>
+                </ul>
+                <div class="user-icons-ds d-none d-lg-flex">
+                    <ul class="navigation-desktop">
+                        <li style="margin-left: 0"><a href="#"><i class="bi bi-person"></i></a></li>
+                        <li style="margin-left: 10px"><a href="#"><i class="bi bi-cart"></i></a></li>
+                        <li style="margin-left: 12px"><a href="#"><i class="bi bi-star"></i></a></li>
+                    </ul>
+                </div>
+                <div onclick="show_menu()" class="list-icon d-block d-lg-none">
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="navigation-mobile d-lg-none" style="display: none">
+        <div class="container">
+            <div class="flex-box-mb">
+                <ul class="navigation-mobile-list">
+                    <li><a class="navigation-item-mb" href="#">ГЛАВНАЯ</a></li>
+                    <li><a class="navigation-item-mb" href="#">КАТАЛОГ</a></li>
+                    <li><a class="navigation-item-mb" href="#">ДОСТАВКА</a></li>
+                    <li><a class="navigation-item-mb" href="#">ОТЗЫВЫ</a></li>
+                </ul>
+                <hr class="main-hr">
+                <div class="user-icons-mb">
+                    <a href="#"><i class="bi bi-person"></i></a>
+                    <a href="#"><i class="bi bi-cart"></i></a>
+                    <a href="#"><i class="bi bi-star"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<section data-aos="fade-in" class="section-1">
+    <div class="container">
+        <div class="flex-box" style="flex-direction: column">
+            <div data-aos="fade-up" class="brand-name">
+                <p style="margin: 0">E-SHOP</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="brand-description">
+                <p>Концептуальный магазин отличных <span id="brand-span">отечественных</span> брендов</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-2">
+   <div data-aos="fade-in" class="container" style="text-align: center">
+        <p style="margin: 0; text-align: center" id="popular">ПОПУЛЯРНОЕ</p>
+        <div class="splide desktop-slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <a href="#"><img class="splide-image" src="/images/pop1.png"></a>
+                        <p class="splide-title">Футболка MEDOOZA Warrior II</p>
+                        <p class="splide-descr">2490₽</p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img class="splide-image" src="/images/pop2.png"></a>
+                        <p class="splide-title">Худи Flame Louchesaints</p>
+                        <p class="splide-descr">4490₽</p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img class="splide-image" src="/images/pop3.png"></a>
+                        <p class="splide-title">Футболка Forbidden RLXD</p>
+                        <p class="splide-descr">1990₽</p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img class="splide-image" src="/images/pop4.png"></a>
+                        <p class="splide-title">Футболка Creepy Паразит</p>
+                        <p class="splide-descr">1990₽</p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img class="splide-image" src="/images/pop5.png"></a>
+                        <p class="splide-title">Худи с молнией «ACAB»</p>
+                        <p class="splide-descr">4590₽</p>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#"><img class="splide-image" src="/images/pop6.png"></a>
+                        <p class="splide-title">Футболка Creepy Наездник</p>
+                        <p class="splide-descr">1990₽</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-3">
+    <div class="container">
+        <p data-aos="fade-in" data-aos-duration="500" class="address-title">АДРЕС МАГАЗИНА</p>
+        <div data-aos="fade-in" data-aos-duration="500" class="address-block">
+            <p style="margin: 0">Г. Краснодар, ул. Коммунаров 268</p>
+        </div>
+    </div>
+</section>
+<section class="section-4">
+    <div class="container">
+        <div data-aos="fade-in" data-aos-duration="500" class="collections-title">
+            <p style="margin: 0">КОЛЛЕКЦИИ БРЕНДОВ</p>
+        </div>
+        <div data-aos="fade-in" data-aos-duration="500" class="collection">
+            <a href="#"><img class="collection-img" src="/images/hook.png"></a>
+            <h1 style="margin: 1rem">HOOK</h1>
+            <p>Симферопольский стиль</p>
+        </div>
+        <div data-aos="fade-in" data-aos-duration="500" class="collection">
+            <a href="#"><img class="collection-img" src="https://sun9-75.userapi.com/impf/c857024/v857024992/f9515/-Ea7mZJdvwY.jpg?size=580x328&quality=96&sign=dc8f128740266ace7b24d62c2f8ddfd4&type=nonehttps://sun9-75.userapi.com/impf/c857024/v857024992/f9515/-Ea7mZJdvwY.jpg?size=580x328&quality=96&sign=dc8f128740266ace7b24d62c2f8ddfd4&type=none"></a>
+            <h1 style="margin: 1rem">KULTURA</h1>
+            <p>Бренд для ярких личностей</p>
+        </div>
+        <div data-aos="fade-in" data-aos-duration="500" class="collection">
+            <a href="#"><img class="collection-img" src="/images/medooza.png"></a>
+            <h1 style="margin: 1rem">MEDOOZA</h1>
+            <p>Beyond the ordinary</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container footer-c">
+        <p style="margin: 0"><a class="footer-button" href="#">Рассылка</a></p>
+        <p style="margin: 0"><a class="footer-button" href="#">Задать вопрос</a></p>
+        <p style="margin: 0"><a class="footer-button" href="#">Оставить отзыв</a></p>
+    </div>
+</footer>
+
+    <!-- ты кто -->
+
+<script>
+AOS.init();
+</script>
+<script>
+    new Splide( '.splide' ).mount();
+</script>
+<script>
+    var splide = new Splide( '.splide', {
+        type   : 'loop',
+        perPage:  3,
+        perMove:  1,
+        cloneStatus: false,
+    } );
+    splide.mount();
+</script>
+</body>

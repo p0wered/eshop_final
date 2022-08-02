@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>E-SHOP</title>
+    <link rel="icon" href="/images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="flex-box-ds" style="justify-content: space-between">
+            <a href="#" id="logo">E-SHOP</a>
+            <ul class="navigation-desktop d-none d-lg-flex" style="padding: 0">
+                <li><a href="index.html" class="navigation-item-ds">ГЛАВНАЯ</a></li>
+                <li><a href="catalog.html" class="navigation-item-ds">КАТАЛОГ</a></li>
+                <li><a href="#" class="navigation-item-ds">ДОСТАВКА</a></li>
+                <li><a target="_blank" href="https://vk.com/topic-39182488_33420679" class="navigation-item-ds">ОТЗЫВЫ</a></li>
+            </ul>
+            <div class="user-icons-ds d-none d-lg-flex">
+                <ul class="navigation-desktop">
+                    <li style="margin-left: 0"><a href="#"><i class="bi bi-person"></i></a></li>
+                    <li style="margin-left: 10px"><a href="#"><i class="bi bi-cart"></i></a></li>
+                    <li style="margin-left: 12px"><a href="#"><i class="bi bi-star"></i></a></li>
+                </ul>
+            </div>
+            <div onclick="show_menu()" class="list-icon d-block d-lg-none">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="navigation-mobile d-lg-none" style="display: none">
+    <div class="container">
+        <div class="flex-box-mb">
+            <ul class="navigation-mobile-list">
+                <li><a class="navigation-item-mb" href="#">ГЛАВНАЯ</a></li>
+                <li><a class="navigation-item-mb" href="#">КАТАЛОГ</a></li>
+                <li><a class="navigation-item-mb" href="#">ДОСТАВКА</a></li>
+                <li><a class="navigation-item-mb" href="#">ОТЗЫВЫ</a></li>
+            </ul>
+            <hr class="main-hr">
+            <div class="user-icons-mb">
+                <a href="#"><i class="bi bi-person"></i></a>
+                <a href="#"><i class="bi bi-cart"></i></a>
+                <a href="#"><i class="bi bi-star"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="delivery-section">
+    <div class="container">
+        <div class="ru-delivery">
+            <h1 class="delivery-title">ДОСТАВКА ПО РОССИИ:</h1>
+            <div style="width: 100%">
+                <p>При заказе от 2990₽ доставка осуществляется <span style="font-weight: 600">бесплатно</span></p>
+                <p>При заказе до 2990₽ стоимость доставки 190₽</p>
+                <p>Доставка осуществляется только после полной предоплаты</p>
+                <p>Срок отправки в течение суток (заказы отправляем ежедневно)</p>
+                <p>В течение суток отправляем вашу посылку Почтой России и присылаем номер для отслеживания</p>
+                <p>Посылки идут в среднем 3-10 рабочих дней, в зависимости от удаленности вашего города от Краснодара </p>
+                <p>В предпраздничное время возможны задержки</p>
+            </div>
+        </div>
+        <div class="world-delivery">
+            <h1 class="delivery-title">ДОСТАВКА ПО МИРУ:</h1>
+            <div style="width: 100%">
+                <p>При заказе от 9990₽ доставка осуществляется <span style="font-weight: 600">бесплатно</span></p>
+                <p>При заказе до 9900₽ стоимость доставки 990₽</p>
+                <p>Средний срок доставки по миру 7-15 рабочих дней</p>
+                <p>Отправка осуществляется только Почтой России </p>
+            </div>
+        </div>
+        <p style="font-weight: 600;margin: 0; padding-bottom: 1rem">При заказе доставки Вам необходимо оплатить полную стоимость товара + стоимость доставки</p>
+    </div>
+</section>
+<footer>
+    <div class="container footer-c">
+        <p style="margin: 0"><a class="footer-button" href="#">Рассылка</a></p>
+        <p style="margin: 0"><a class="footer-button" href="#">Задать вопрос</a></p>
+        <p style="margin: 0"><a class="footer-button" href="#">Оставить отзыв</a></p>
+    </div>
+</footer>
+</body>
